@@ -12,7 +12,7 @@ require_once("../inc/header.php");
           <div class="col-6 col-auto">
             <div class="py-5 mx-5">
 
-              <h2 class="font-weight-bold mb-5"> 500 ERROR</h2>
+              <h1 class="font-weight-bold mb-5"> 500 ERROR</h1>
 
             </div>
           </div>

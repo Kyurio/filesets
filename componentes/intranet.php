@@ -37,10 +37,10 @@
                   <tr v-for="item in files">
                     <th scope="row">{{ item.nombre }}</th>
                     <td>{{ item.extension }}</td>
-                    <td :id="item.id" >{{ item.url }}</td>
+                    <td :id="item.id" >localhost{{ item.url }}</td>
                     <td>
-                      <small v-if="msg != null">{{ msg }}</small>
-                      <button type="button" class="btn btn-info" name="button" @click="copiar_link('item.id')" ><i class="fas fa-link"></i></button>
+                      <small :id="'spam'+item.id">{{ msg }}</small>
+                      <button type="button" class="btn btn-info" name="button" @click="copiar_link(item.id)" ><i class="fas fa-link"></i></button>
                     </td>
                   </tr>
 
