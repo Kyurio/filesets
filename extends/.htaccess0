@@ -1,0 +1,17 @@
+RewriteEngine on
+
+#Redirecciona al index
+RewriteRule ^$ /filesets/vistas/index.php [L]
+
+#buscar el archivo ingresado en la url
+#RewriteCond %{REQUEST_FILENAME} !-f
+
+#Urls amigables
+RewriteRule ^([a-zA-Z0-9/]+)$ /filesets/vistas/$1.php [NC,L]
+
+
+#Error
+ErrorDocument 404 /filesets/error/404.php
+ErrorDocument 500 /filesets/error/500.php
+ErrorDocument 403 /filesets/error/403.php
+ErrorDocument 300 /filesets/error/300.php
